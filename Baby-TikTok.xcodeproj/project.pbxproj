@@ -16,6 +16,11 @@
 		C26DFA1425F131C5007FA684 /* Baby_TikTokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DFA1325F131C5007FA684 /* Baby_TikTokTests.swift */; };
 		C26DFA1F25F131C5007FA684 /* Baby_TikTokUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DFA1E25F131C5007FA684 /* Baby_TikTokUITests.swift */; };
 		C26DFA3025F13515007FA684 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DFA2F25F13515007FA684 /* VideoCollectionViewCell.swift */; };
+		C26DFA4725F147D5007FA684 /* hunter1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C26DFA3D25F143B7007FA684 /* hunter1.mp4 */; };
+		C26DFA4825F147D5007FA684 /* hunter2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C26DFA4025F143B9007FA684 /* hunter2.mp4 */; };
+		C26DFA4925F147D5007FA684 /* hunter4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C26DFA3E25F143B8007FA684 /* hunter4.mp4 */; };
+		C26DFA4A25F147D5007FA684 /* hunter5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C26DFA3C25F143B7007FA684 /* hunter5.mp4 */; };
+		C26DFA4B25F147D5007FA684 /* hunter3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C26DFA3F25F143B8007FA684 /* hunter3.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +59,7 @@
 		C26DFA3C25F143B7007FA684 /* hunter5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunter5.mp4; sourceTree = "<group>"; };
 		C26DFA3D25F143B7007FA684 /* hunter1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunter1.mp4; sourceTree = "<group>"; };
 		C26DFA3E25F143B8007FA684 /* hunter4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunter4.mp4; sourceTree = "<group>"; };
-		C26DFA3F25F143B8007FA684 /* hutner3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hutner3.mp4; sourceTree = "<group>"; };
+		C26DFA3F25F143B8007FA684 /* hunter3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunter3.mp4; sourceTree = "<group>"; };
 		C26DFA4025F143B9007FA684 /* hunter2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hunter2.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +115,7 @@
 				C26DFA4025F143B9007FA684 /* hunter2.mp4 */,
 				C26DFA3E25F143B8007FA684 /* hunter4.mp4 */,
 				C26DFA3C25F143B7007FA684 /* hunter5.mp4 */,
-				C26DFA3F25F143B8007FA684 /* hutner3.mp4 */,
+				C26DFA3F25F143B8007FA684 /* hunter3.mp4 */,
 				C26DF9FC25F131C4007FA684 /* AppDelegate.swift */,
 				C26DF9FE25F131C4007FA684 /* SceneDelegate.swift */,
 				C26DFA0025F131C4007FA684 /* ViewController.swift */,
@@ -244,6 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26DFA4725F147D5007FA684 /* hunter1.mp4 in Resources */,
+				C26DFA4825F147D5007FA684 /* hunter2.mp4 in Resources */,
+				C26DFA4925F147D5007FA684 /* hunter4.mp4 in Resources */,
+				C26DFA4A25F147D5007FA684 /* hunter5.mp4 in Resources */,
+				C26DFA4B25F147D5007FA684 /* hunter3.mp4 in Resources */,
 				C26DFA0925F131C5007FA684 /* LaunchScreen.storyboard in Resources */,
 				C26DFA0625F131C5007FA684 /* Assets.xcassets in Resources */,
 				C26DFA0425F131C4007FA684 /* Main.storyboard in Resources */,
@@ -451,7 +461,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MLP2Y9S77;
+				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = "Baby-TikTok/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MLP2Y9S77;
+				DEVELOPMENT_TEAM = E64ACFS2Y6;
 				INFOPLIST_FILE = "Baby-TikTok/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

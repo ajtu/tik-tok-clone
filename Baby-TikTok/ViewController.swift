@@ -20,10 +20,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for _ in 0...10 {
-            let model = VideoModel(caption: "Hunter's Growth", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter1", videoFileFormat: "mp4")
+        for _ in 0...5 {
+        for n in 1...5 {
+            let model = VideoModel(caption: "Hunter's Growth", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter\(n)", videoFileFormat: "mp4")
             data.append(model)
+        }
         }
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -56,6 +57,8 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let viewModel = data[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VideoCollectionViewCell.identifier, for: indexPath) as! VideoCollectionViewCell
+        print(viewModel.videoFileName)
+        print(viewModel.videoFileFormat)
         cell.configure(with: viewModel)
         return cell
     }
