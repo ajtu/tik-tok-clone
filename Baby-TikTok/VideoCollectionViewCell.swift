@@ -10,8 +10,8 @@ import AVFoundation
 
 class VideoCollectionViewCell: UICollectionViewCell {
     static let identifier = "VideoCollectionViewCell"
-    //    var player: AVPlayer?
-        var player: AVQueuePlayer?
+    
+    var player: AVQueuePlayer?
     var playerLayer: AVPlayerLayer?
     var playerLooper: AVPlayerLooper?
     var playerItem: AVPlayerItem?
@@ -20,7 +20,7 @@ class VideoCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .blue
+        contentView.backgroundColor = .black
 
         
     }
@@ -44,11 +44,23 @@ class VideoCollectionViewCell: UICollectionViewCell {
         playerLayer!.player = player
         playerLayer!.frame = contentView.bounds
         contentView.layer.addSublayer(playerLayer!)
-        player?.volume = 10
-        player?.play()
+//        player?.volume = 30.0
+//        player?.play()
 
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    //public methods
+    func playVideo() {
+//        shouldLoopVideo = true
+        playerLayer?.player?.play()
+        playerLayer?.player!.volume = 30.0
+    }
+    
+    func stopVideo() {
+//        shouldLoopVideo = false
+        playerLayer?.player?.pause()
+        playerLayer!.player?.volume = 0
     }
 }
