@@ -10,7 +10,11 @@ import AVFoundation
 
 class VideoCollectionViewCell: UICollectionViewCell {
     static let identifier = "VideoCollectionViewCell"
-    var player: AVPlayer?
+    //    var player: AVPlayer?
+        var player: AVQueuePlayer?
+    var playerLayer: AVPlayerLayer?
+    var playerLooper: AVPlayerLooper?
+    var playerItem: AVPlayerItem?
     private var model: VideoModel?
     
     
@@ -31,12 +35,16 @@ class VideoCollectionViewCell: UICollectionViewCell {
         guard let path = Bundle.main.path(forResource: model.videoFileName, ofType: model.videoFileFormat) else {
             print("failed to find video")
             return }
-        player = AVPlayer(url: URL(fileURLWithPath: path))
-        let playerView = AVPlayerLayer()
-        playerView.player = player
-        playerView.frame = contentView.bounds
-        contentView.layer.addSublayer(playerView)
-        player?.volume = 0
+        player = AVQueuePlayer()
+        playerLayer = AVPlayerLayer(player: player)
+        playerItem = AVPlayerItem(url: URL(fileURLWithPath: path))
+        playerLooper = AVPlayerLooper(player:player!, templateItem: playerItem!)
+
+
+        playerLayer!.player = player
+        playerLayer!.frame = contentView.bounds
+        contentView.layer.addSublayer(playerLayer!)
+        player?.volume = 10
         player?.play()
 
     }
