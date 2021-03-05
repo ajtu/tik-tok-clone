@@ -61,12 +61,13 @@ class ViewController: UIViewController {
     
     
      func setupModel() -> [VideoModel]{
-        let model1 = VideoModel(caption: "hunter in bath", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter1", videoFileFormat: "mp4")
-        let model2 = VideoModel(caption: "hunter running in grass", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter2", videoFileFormat: "mp4")
-        let model3 = VideoModel(caption: "hunter on sofa", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter3", videoFileFormat: "mp4")
-        let model4 = VideoModel(caption: "hunter with aidan", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter4", videoFileFormat: "mp4")
-        let model5 = VideoModel(caption: "hunter with mom", username: "@alvin", audioTrackName: "not sure", videoFileName: "hunter5", videoFileFormat: "mp4")
+        let model1 = VideoModel(caption: "hunter in bath", username: "@alvin", audioTrackName: "not sure", videoFileName: "1", videoFileFormat: "mp4")
+        let model2 = VideoModel(caption: "hunter running in grass", username: "@alvin", audioTrackName: "not sure", videoFileName: "2", videoFileFormat: "mp4")
+        let model3 = VideoModel(caption: "hunter on sofa", username: "@alvin", audioTrackName: "not sure", videoFileName: "3", videoFileFormat: "mp4")
+        let model4 = VideoModel(caption: "hunter with aidan", username: "@alvin", audioTrackName: "not sure", videoFileName: "4", videoFileFormat: "mp4")
+        let model5 = VideoModel(caption: "hunter with aidan", username: "@alvin", audioTrackName: "not sure", videoFileName: "5", videoFileFormat: "mp4")
         let array = [model1,model2,model3,model4,model5]
+        print(array)
         return array
     }
     
